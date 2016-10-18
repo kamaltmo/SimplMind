@@ -1,16 +1,16 @@
 # SimplMind
 *A very very simple Feedforward Neural Network library in Java*
 
-SimplMind was developed as way for me to further my understanding of Neural Network and as a result is not optimised in any way shape or form. If you do decide you want to used this library, enjoy.
+SimplMind was developed as a way for me to further my understanding of Neural Network and as a result is not optimised in any way shape or form. If you do decide you want to use this library, enjoy.
 
 ## Features
 - Vectorized - uses a matrix implementation to process training data
-- Configurable - allows you to customize the network topology
+- Configurable - allows you to customise the network topology
 
 ## Creating a Mind
 To create a mind you must first decide on its topology, this is done by creating input, hidden and output layers.
 ```
-//Layers can have diffrent activation function, the default is sigmoid, linear and hyperbolic tangent are also avalible
+//Layers can have different activation function, the default is sigmoid, linear and hyperbolic tangent are also available
 Layer in = new Layer(2, 2);
 
 //The hidden section can be specifed as either a single layer or an array of layers
@@ -20,9 +20,9 @@ Layer[] hidden = new Layer[]{new Layer(3), new Layer(2)};
 Layer out = new Layer(1);
     
 ```
-After you have created the required layers you can constuct a Mind
+After you have created the required layers you can construct a Mind
 ```
-// The final variables tells us if the mind should normalize data or not
+// The final variable tells us if the mind should normalise data or not
 Mind test = new Mind(in, hidden, out, true);
 ```
 
